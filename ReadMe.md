@@ -16,5 +16,5 @@
 
 * 2.15 [函数表达式](./第一部分 基础/2 JavaScript 基础知识/2.15 函数表达式/FunctionExpression.js)
 
-* 
+* 2.16 [箭头函数的基础知识](./第一部分 基础/2 JavaScript 基础知识/2.16 箭头函数的基础知识/ArrowFunctionBase.js)
 
