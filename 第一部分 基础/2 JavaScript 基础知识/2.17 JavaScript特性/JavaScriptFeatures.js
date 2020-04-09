@@ -43,5 +43,34 @@ typeof function () {} == "function";
 //上面几个函数都会产生  模态框，它们会暂停代码并阻止用户与页面的其他部分进行交互，知道用户做出回答为止。
 
 
-//5. 
+//5. 运算符
+//大部分运算符都是一样的
+//比较运算符，JavaScript 有个严格相等运算符 === 
+//值 null  和 undefined 是特殊的，它们只在 == 下相等，且不等于其他任何值。
+//大于/小于比较，在比较字符串的时候，会按照每个字符逐个比较，应该是比较 ASCII 码。其他类型则被转换为数字。
 
+
+//6. 循环
+//常用的 for 、while 、do while 和 OC 中的一样
+
+//7. Switch 这个也和 OC 一样
+
+//8. 函数
+//8.1 声明函数，类似于下面这种 
+function someFunc01() {
+	//Do something here .
+}
+
+//8.2 函数表达式,记得后面有分号
+let someFunc02 = func(){
+	//DO something here .
+};
+
+//8.3 箭头函数
+let someFunc03 = (arg1,arg2) => {
+	//Do someting here.
+};
+
+//函数可能具有局部变量：在函数内部声明的变量。这类变量只在函数内部可见。
+//参数可以有默认值: function sum(a=1,b=2){....};
+//函数总是返回一些东西。如果没有 return 语句，那么返回的结果是 undefined .
