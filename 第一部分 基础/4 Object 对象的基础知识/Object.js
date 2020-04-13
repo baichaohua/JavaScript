@@ -201,3 +201,44 @@ let objA = {"name":"super","age":20};
 let objB = {};
 Object.assign(objB, objA);
 bchConsoleLog(objB);
+
+//【当一个对象里有另外一个或者多个对象，无论哪种方式的拷贝，都只会拷贝另外一个或者多个对象的引用】
+
+
+let schedule = {};
+
+bchConsoleLog( isEmpty(schedule) ); // true
+
+schedule["8:30"] = "get up";
+
+bchConsoleLog( isEmpty(schedule) ); // false
+
+
+function isEmpty(obj) {
+ 	for (let key in obj)
+	{
+	 return true;
+	}
+	return false;
+	
+}
+
+
+
+/*
+	总结：
+		1. 对象更像是 OC 中的字典
+		2. 对象的 key 是字符串，而 value 可以是任何数据类型
+		3. 我们可以通过 obj.key  或者 obj[key] 来获取 key 对应的 value 
+		4. 其他操作，删除 delete obj.key ,检查是否存在某个键值对  key in obj ,遍历检查对象  for (let key in obj)
+		5. 对象是通过引用被赋值或者复制的。也就是说变量存储的不是对象本身，而是对象的引用地址。我们可以通过
+		   Object.assign 或者 _.cloneDeep(obj) 来对一个对象进行深拷贝。
+		6. JavaScript 中还有其他类型的对象：
+			Array 用于存储有序数据集合。
+			Date 用于存储日期时间。
+			Error 用于存储错误信息
+		   其他类型的对象，只是在基础对象上做了一些扩展。
+		7.【当一个对象里有另外一个或者多个对象，无论哪种方式的拷贝，都只会拷贝另外一个或者多个对象的引用】
+		
+*/
+
