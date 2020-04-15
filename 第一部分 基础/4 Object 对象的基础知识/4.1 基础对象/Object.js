@@ -224,6 +224,24 @@ function isEmpty(obj) {
 }
 
 
+//... 也可以用来拷贝对象，或者覆盖元素
+let bai={
+	"name":"bai",
+	"age":18,
+	"sex":"boy",
+	"country":"China",
+	};
+
+console.log(bai);
+
+let hua={
+	...bai,
+	"age":29,
+	"name":"hua",
+};
+console.log(hua);
+console.log(hua===bai);
+
 
 /*
 	总结：

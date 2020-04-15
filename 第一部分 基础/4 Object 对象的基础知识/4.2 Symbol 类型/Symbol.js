@@ -20,5 +20,3 @@ console.log(id1.description);
 */
 
 
-
-
