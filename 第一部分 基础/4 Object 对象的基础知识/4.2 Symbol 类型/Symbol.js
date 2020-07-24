@@ -14,6 +14,7 @@ console.log(id==id2);
 console.log(id1.toString());
 console.log(id1.description);
 
+
 //隐藏属性
 /*
 	Symbol 允许我们创建对象的隐藏属性，代码的任何其他部分都不能意外访问或重写这些属性。

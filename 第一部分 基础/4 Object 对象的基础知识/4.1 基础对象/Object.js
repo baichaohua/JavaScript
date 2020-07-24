@@ -54,7 +54,6 @@ let personObj = {
 bchConsoleLog(personObj["xiaobai"]);
 
 //一个返回对象的 Function
-
 function getPersonInfo( userName ,age ,sex ,height) {
 	return{
 		"userName" : userName ,
